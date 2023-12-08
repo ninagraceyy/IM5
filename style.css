@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+html {
+    background-color: #dbad;
+    height: 100%;
+    line-height: 1.5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    color:#362118;
+}
+
+head {
+    padding: 20;
+
+}
+
+body {
+    margin-top: 50px; /* Hier kannst du den Abstand nach Bedarf anpassen */
+}
+
+
+html, body {
+    padding: 20;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    hyphens: auto;
+    min-height: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section{
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Shrikhand", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-family:"Shrikhand", sans-serif;
+    font-size: 9vw;
+    line-height: 1;
+    margin-top: 0;
+    width: 100%; /* Ändere die Breite des Elements */
+    word-wrap: break-word; /* Erlaube Wortumbruch */
+}
+
+.contain {
+    margin: 0 10%;
+}
+
+.hero-text {
+    width: 80%;
+    float: left;
+}
+
+a {
+    text-decoration: none; /* Entfernt das Unterstreichen des Links */
+    color: inherit; /* Verwendet die Farbe des umgebenden Elements */
+}
+
+.cat{
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #362118;
+    margin-top: 30px;
+}
+
+.cat:after {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    margin-left: 5px;
+  }
+
+
+.cat.margin-bottom{
+    margin-bottom: 1rem;
+}
+
+
+.description {
+letter-spacing: 1px;
+width:100%;
+float: left;
+margin-bottom: 1rem;
+}
+
+.description p {
+font-family: "Roboto", sans-serif;
+font-size: 1.2rem;
+}
+
+#bg{
+    z-index: -1;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+#bg img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    max-width: 900px;
+}
+
+.image-one{
+    width: 80%;
+    float: left;
+    margin-right: 50%;
+    margin-bottom: 50%;
+}
+
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+    grid-gap: 20px; /* Abstand zwischen den Bildern */
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.slide-container {
+    width: 80%; /* Breite des Slide-Containers */
+    height: 50vh;
+    margin: 0 auto; /* Zentrierung des Slide-Containers */
+    margin-bottom: 100px; /* Ändern Sie den Wert nach Bedarf */
+    padding-bottom: 40%;
+    overflow: hidden; /* Verstecken von Überlauf */
+}
+
+.slides {
+    display: flex; /* Flexibles Layout für die Bilder */
+    overflow-x: auto; /* Horizontales Scrollen */
+    scroll-snap-type: x mandatory; /* Scrollen mit Rasterung */
+}
+
+
+.slides img {
+    scroll-snap-align: start;
+    width: auto; /* Definiert die Breite des Bildes auf auto, um das Originalformat zu behalten */
+    height: 80vh; /* Beispielhöhe für das Bild */
+    object-fit: contain; /* Behält das Originalformat des Bildes bei */
+}
+
+
+
+.footer {
+    background-color: #C8A2C8; /* Fliederfarbe */
+    text-align: center;
+    width: 80%; /* Ändere die Breite des Footers */
+    max-height: 40px; /* Höhe des Footers */
+    display: flex; /* Flexbox verwenden */
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: space-between; /* Innenabstand zwischen den Elementen */
+    padding: 10px 0; /* Innerer Abstand oben und unten */
+    margin: 0 auto; /* Zentriert den Footer horizontal */
+}
+
+.footer a {
+    display: inline-block; /* Ermöglicht die Anpassung der Bildgröße */
+}
+
+.footer img {
+    width: 190px; /* Größeres Bild */
+    height: auto; /* Automatische Anpassung der Höhe */
+    border-radius: 50%; /* Verleiht dem Bild eine runde Form */
+}
+
+
+
+@media (min-width: 1280px) {
+    .description {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .image-one {
+       width: 100%;
+       padding-bottom: 20px;
+
+    }
+    .footer {
+        justify-content: center; /* Zentrierung des Inhalts */
+} 
+.description p {
+    text-align: justify;
+}
+}
